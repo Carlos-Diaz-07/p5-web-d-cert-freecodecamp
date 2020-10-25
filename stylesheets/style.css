@@ -1,7 +1,60 @@
-body {
-  display: flex;
-  flex-direction: column;
+html {
+  font-size: 95%;
 }
+
+a {
+  font-size: 1.25em;
+}
+
+@media(max-width:665px) {
+  html {
+    font-size: 75%;
+  }
+
+  a {
+    font-size: 1.5em;
+  }
+  #projects {
+    padding-top: 2%;
+  }
+  #projects-grid {
+    padding-top: 8%;
+  }
+  #contact-section {
+    padding: 10% 0 0 0;
+  }
+}
+
+@media(max-width:500px) {
+  html {
+    font-size: 65%;
+  }
+
+  a {
+    font-size: 1.75em;
+  }
+  #projects {
+    padding-top: 5%;
+  }
+  #projects-grid {
+    margin-top: 5%;
+  }
+}
+
+header {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+/*NAVIGATION BAR*/
+
 #navbar {
   display: flex;
   min-width: 100%;  
@@ -28,10 +81,11 @@ body {
   margin: 0;
 }
 
+/*WELCOME SECTION*/
+
 #welcome-section {
   display: flex;
   flex-direction: column;
-  margin-top: 75px;
   height: 100vh;
   background-color: teal;
   align-items: center;
@@ -39,17 +93,46 @@ body {
   align-content: center;
 }
 
+/*PROJECTS SECTION*/
+
 #projects {
-  
+  margin-top: 5%;
+  text-align: center;
 }
 
 #projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 100%;
+  grid-gap: 25px;
+  padding-top: 6%;
 }
 
 .project-tile {
-  width: 250px;
-  height: 250px;
   border: 2px solid black;
+}
+
+.project-img {
+  width: 100%;
+}
+
+/*CONTACT SECTION*/
+
+#contact-section {
+  padding: 5% 0 0 0;
+  text-align: center;
+}
+
+#contact-section > ul {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 30%;
+    list-style: none;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 0;
+  }
+
+#contact-section > ul > li {
+  min-width: 33%;
 }
