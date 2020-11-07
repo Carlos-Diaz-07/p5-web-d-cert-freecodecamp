@@ -9,7 +9,7 @@ a {
   text-decoration: unset;
 }
 
-header {
+h2 {
   font-size: 2em;
   color: black;
 }
@@ -166,11 +166,11 @@ h3 {
   min-width: 33%;
 }
 
-#contact-img {
+.contact-img {
   width: 75px;
   height: auto;
 }
 
-#profile-link > p {
+.profile-link > p {
   color: black;
 }
